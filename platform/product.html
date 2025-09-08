@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f6fa;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #222;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
+      padding: 20px;
+    }
+
+    .product-header {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .product-header img {
+      width: 280px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .product-info h2 {
+      margin: 0 0 10px;
+    }
+
+    .price {
+      color: #e63946;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .rating {
+      color: #f4a261;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+    .description {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .review-section {
+      margin-top: 20px;
+    }
+
+    .review-section h3 {
+      margin-bottom: 10px;
+      color: #1d3557;
+    }
+
+    .review {
+      background: #f8f9fa;
+      padding: 12px 15px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      border-left: 4px solid #457b9d;
+    }
+
+    .review strong {
+      color: #222;
+    }
+
+    .buy-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 15px;
+      background: linear-gradient(135deg,#1a73e8,#0f5ad3);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    .buy-btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg,#0f5ad3,#004aad);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Product Details</h1>
+
+    <!-- Product 1 -->
+    <div class="product-card">
+      <div class="product-header">
+        <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=500&q=80" alt="Headphones">
+        <div class="product-info">
+          <h2>Wireless Headphones</h2>
+          <div class="price">₹2,999</div>
+          <div class="rating">★★★★☆ (120 reviews)</div>
+          <p class="description">Experience crystal-clear sound and long battery life with our wireless headphones, perfect for music lovers and professionals.</p>
+          <a class="buy-btn" href="buynow.html?name=Wireless+Headphones&price=2999&img=https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=500&q=80">Buy Now</a>
+        </div>
+      </div>
+      <div class="review-section">
+        <h3>Customer Reviews</h3>
+        <div class="review"><strong><a href="profile1.html">Rahul</a>:</strong> Amazing sound quality and very comfortable.</div>
+        <div class="review"><strong>Ananya:</strong> Battery lasts long, great for travel!</div>
+        <div class="review"><strong>Kiran:</strong> Noise cancellation is really good.</div>
+        <div class="review"><strong>Sneha:</strong> Worth the price, stylish look too.</div>
+        <div class="review"><strong>Amit:</strong> Bass could be better, but overall satisfied.</div>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+      <div class="product-header">
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=500&q=80" alt="Smart Watch">
+        <div class="product-info">
+          <h2>Smart Watch</h2>
+          <div class="price">₹1,999</div>
+          <div class="rating">★★★★★ (80 reviews)</div>
+          <p class="description">Stay connected and track your fitness goals with this stylish and lightweight smartwatch, compatible with Android & iOS.</p>
+          <a class="buy-btn" href="buynow.html?name=Smart+Watch&price=1999&img=https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=500&q=80">Buy Now</a>
+        </div>
+      </div>
+      <div class="review-section">
+        <h3>Customer Reviews</h3>
+        <div class="review"><strong>Meera:</strong> Love the sleek design and step counter.</div>
+        <div class="review"><strong>Arjun:</strong> Best budget smartwatch I’ve used.</div>
+        <div class="review"><strong>Deepa:</strong> Notifications work perfectly.</div>
+        <div class="review"><strong>Suraj:</strong> Tracks sleep and heart rate accurately.</div>
+        <div class="review"><strong>Ravi:</strong> Battery lasts for almost a week!</div>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <div class="product-header">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80" alt="Speaker">
+        <div class="product-info">
+          <h2>Bluetooth Speaker</h2>
+          <div class="price">₹899</div>
+          <div class="rating">★★★★☆ (200 reviews)</div>
+          <p class="description">Compact and powerful, this portable speaker is perfect for parties, travel, and outdoor adventures with strong bass.</p>
+          <a class="buy-btn" href="buynow.html?name=Bluetooth+Speaker&price=899&img=https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80">Buy Now</a>
+        </div>
+      </div>
+      <div class="review-section">
+        <h3>Customer Reviews</h3>
+        <div class="review"><strong>Priya:</strong> Sound is loud and clear for its size.</div>
+        <div class="review"><strong>Vikram:</strong> Very lightweight and portable.</div>
+        <div class="review"><strong>Kavya:</strong> Bluetooth range is excellent.</div>
+        <div class="review"><strong>Manoj:</strong> Battery backup could be improved.</div>
+        <div class="review"><strong>Divya:</strong> Perfect for small gatherings!</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

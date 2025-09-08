@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy Now</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 30px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      display: flex;
+      gap: 30px;
+    }
+
+    .product-details {
+      flex: 1;
+      text-align: center;
+    }
+
+    .product-details img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .product-details h2 {
+      margin: 0;
+      color: #222;
+    }
+
+    .product-details p {
+      color: #555;
+      font-size: 14px;
+    }
+
+    .price {
+      font-size: 22px;
+      font-weight: bold;
+      color: #1a73e8;
+      margin: 10px 0;
+    }
+
+    .checkout-form {
+      flex: 1;
+    }
+
+    .checkout-form h3 {
+      margin-bottom: 20px;
+      color: #1a73e8;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .buy-btn {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(135deg, #1a73e8, #0f5ad3);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      transition: transform 0.2s, background 0.3s;
+      margin-top: 10px;
+    }
+
+    .buy-btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #0f5ad3, #004aad);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Product Side -->
+    <div class="product-details">
+      <img src="https://m.media-amazon.com/images/I/61+8N1rB6bL._SX679_.jpg" alt="Headphones">
+      <h2>Wireless Headphones</h2>
+      <p>High-quality sound, noise cancellation, 20-hour battery life, and lightweight design for comfort.</p>
+      <p class="price">₹3,499</p>
+    </div>
+
+    <!-- Checkout Form -->
+    <div class="checkout-form">
+      <h3>Checkout Details</h3>
+      <form>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your full name">
+        </div>
+
+        <div class="form-group">
+          <label for="address">Shipping Address</label>
+          <input type="text" id="address" placeholder="Enter your address">
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Mobile Number</label>
+          <input type="text" id="phone" placeholder="Enter your mobile number">
+        </div>
+
+        <div class="form-group">
+          <label for="payment">Payment Method</label>
+          <select id="payment">
+            <option>Credit/Debit Card</option>
+            <option>UPI</option>
+            <option>Cash on Delivery</option>
+          </select>
+        </div>
+
+        <button type="submit" class="buy-btn">Buy Now</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
